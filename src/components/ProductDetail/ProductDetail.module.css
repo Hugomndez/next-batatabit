@@ -1,0 +1,77 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warm-black);
+}
+.logo {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 20px);
+}
+.title-container {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.card-icon {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.card-body {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+@media screen and (min-width: 1000px) {
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+  }
+}

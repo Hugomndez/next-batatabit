@@ -1,0 +1,124 @@
+.section {
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+.title-container {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.title {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+.subtitle {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+.slider-container {
+  display: flex;
+  gap: 10px;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
+}
+
+@media screen and (min-width: 768px) {
+  .slider-container {
+    margin: 0 auto;
+    width: 750px;
+  }
+}
+.card-container {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 200px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  top: -15px;
+  left: calc(50% - 60px);
+  font-size: 1.2rem;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--just-white);
+  background-color: var(--bitcoin-orange);
+}
+
+.card-title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.8rem;
+  color: black;
+}
+.card-price {
+  position: relative;
+  padding: 5px 0;
+  font-size: 5.2rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: black;
+}
+.card-price span {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 38px);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+.card-saving {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  color: #757575;
+}
+.card-cta {
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: #faf8f7;
+  border: 2px solid var(--bitcoin-orange);
+  border-radius: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.8rem;
+  color: var(--warm-black);
+}
+
+.card-cta-icon {
+  vertical-align: middle;
+}
