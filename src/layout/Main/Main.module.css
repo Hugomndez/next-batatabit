@@ -1,0 +1,6 @@
+.main {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  background-color: var(--off-white);
+}
