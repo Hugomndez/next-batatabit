@@ -1,3 +1,4 @@
+import Image from 'next/future/image';
 import logoFooter from '../../assets/images/logo-footer.svg';
 import styles from './Footer.module.css';
 
@@ -24,15 +25,7 @@ const Footer = () => {
         </ul>
       </section>
       <section className={styles.section}>
-        <img
-          src={logoFooter}
-          alt='Logo de Batatabit 2021'
-          width='64'
-          height='50'
-          fetchpriority='low'
-          decoding='async'
-          loading='lazy'
-        />
+        <Image src={logoFooter} alt='Logo Batatabit 2021' />
       </section>
     </footer>
   );

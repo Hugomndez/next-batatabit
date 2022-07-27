@@ -1,3 +1,4 @@
+import Image from 'next/future/image';
 import orangeRightArrow from '../../assets/icons/orange-right-arrow.svg';
 import styles from './Plans.module.css';
 
@@ -22,7 +23,8 @@ const Plans = () => {
             <p className={styles.cardSaving}>* Acceso limitado.</p>
             <button className={styles.cardCta}>
               Escoger este
-              <img
+              <Image src={orangeRightArrow} alt='' />
+              {/* <img
                 className={styles.cardCtaIcon}
                 src={orangeRightArrow}
                 alt=''
@@ -31,7 +33,7 @@ const Plans = () => {
                 fetchpriority='low'
                 decoding='async'
                 loading='lazy'
-              />
+              /> */}
             </button>
           </div>
         </article>
@@ -47,7 +49,8 @@ const Plans = () => {
             </p>
             <button className={styles.cardCta}>
               Escoger este
-              <img
+              <Image src={orangeRightArrow} alt='' />
+              {/* <img
                 className={styles.cardCtaIcon}
                 src={orangeRightArrow}
                 alt=''
@@ -56,7 +59,7 @@ const Plans = () => {
                 fetchpriority='low'
                 decoding='async'
                 loading='lazy'
-              />
+              /> */}
             </button>
           </div>
         </article>
@@ -69,7 +72,8 @@ const Plans = () => {
             <p className={styles.cardSaving}>* Acceso ilimitado.</p>
             <button className={styles.cardCta}>
               Escoger este
-              <img
+              <Image src={orangeRightArrow} alt='' />
+              {/* <img
                 className={styles.cardCtaIcon}
                 src={orangeRightArrow}
                 alt=''
@@ -78,7 +82,7 @@ const Plans = () => {
                 fetchpriority='low'
                 decoding='async'
                 loading='lazy'
-              />
+              /> */}
             </button>
           </div>
         </article>

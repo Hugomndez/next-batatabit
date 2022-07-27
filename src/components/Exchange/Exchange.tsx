@@ -1,3 +1,4 @@
+import Image from 'next/future/image';
 import trendingDown from '../../assets/icons/trending-down.svg';
 import trendingUp from '../../assets/icons/trending-up.svg';
 import bitcoin from '../../assets/images/bitcoin.svg';
@@ -9,7 +10,8 @@ const Exchange = () => {
 
   return (
     <section className={styles.section}>
-      <img
+      <Image src={bitcoin} alt='' priority />
+      {/* <img
         className={styles.image}
         src={bitcoin}
         alt=''
@@ -18,7 +20,7 @@ const Exchange = () => {
         fetchpriority='high'
         decoding='sync'
         loading='eager'
-      />
+      /> */}
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>
           Visibilizamos todas las tasas de cambio.
@@ -39,7 +41,8 @@ const Exchange = () => {
                 </td>
                 <td className={`${styles.tableTopRight} ${styles.tableRight}`}>
                   $ 1.96
-                  <img
+                  <Image src={trendingDown} alt='' />
+                  {/* <img
                     className={styles.trendingDown}
                     src={trendingDown}
                     alt=''
@@ -48,14 +51,15 @@ const Exchange = () => {
                     fetchpriority='low'
                     decoding='async'
                     loading='lazy'
-                  />
+                  /> */}
                 </td>
               </tr>
               <tr>
                 <td className={styles.tableLeft}>Ethereum</td>
                 <td className={styles.tableRight}>
                   $ 0.07
-                  <img
+                  <Image src={trendingUp} alt='' />
+                  {/* <img
                     className={styles.trendingUp}
                     src={trendingUp}
                     alt=''
@@ -64,14 +68,15 @@ const Exchange = () => {
                     fetchpriority='low'
                     decoding='async'
                     loading='lazy'
-                  />
+                  /> */}
                 </td>
               </tr>
               <tr>
                 <td className={styles.tableLeft}>Ripple</td>
                 <td className={styles.tableRight}>
                   $ 2.17
-                  <img
+                  <Image src={trendingDown} alt='' />
+                  {/* <img
                     className={styles.trendingDown}
                     src={trendingDown}
                     alt=''
@@ -80,7 +85,7 @@ const Exchange = () => {
                     fetchpriority='low'
                     decoding='async'
                     loading='lazy'
-                  />
+                  /> */}
                 </td>
               </tr>
               <tr>
@@ -91,7 +96,8 @@ const Exchange = () => {
                   className={`${styles.tableBottomRight} ${styles.tableRight}`}
                 >
                   $ 4.96
-                  <img
+                  <Image src={trendingDown} alt='' />
+                  {/* <img
                     className={styles.trendingDown}
                     src={trendingDown}
                     alt=''
@@ -100,7 +106,7 @@ const Exchange = () => {
                     fetchpriority='low'
                     decoding='async'
                     loading='lazy'
-                  />
+                  /> */}
                 </td>
               </tr>
             </table>

@@ -1,22 +1,18 @@
 import downArrow from '../../assets/icons/down-arrow.svg';
 import logo from '../../assets/images/logo.svg';
 import styles from './Header.module.css';
+import Image from 'next/future/image';
+import Link from 'next/link';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <a href='/' className={styles.logo}>
-        <img
-          src={logo}
-          alt='Batatabit logo'
-          width='150'
-          height='24'
-          fetchpriority='high'
-          decoding='sync'
-          loading='eager'
-        />
-      </a>
-      <div className={styles.titleContainer}>
+      <Link href='/'>
+        <a className={styles.logo}>
+          <Image src={logo} alt='Batatabit logo' priority />
+        </a>
+      </Link>
+      <div className={styles.container}>
         <h1 className={styles.title}>
           La próxima revolución en el intercambio de criptomonedas.
         </h1>
@@ -26,16 +22,7 @@ const Header = () => {
         </p>
         <a href='#plans' className={styles.button}>
           <p>Conoce Nuestros Planes</p>
-          <img
-            className={styles.buttonIcon}
-            src={downArrow}
-            alt=''
-            width='13'
-            height='8'
-            fetchpriority='high'
-            decoding='sync'
-            loading='eager'
-          />
+          <Image src={downArrow} alt='' className={styles.icon} priority />
         </a>
       </div>
     </header>
