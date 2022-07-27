@@ -8,9 +8,8 @@ const Home: NextPage = () => {
         <title>NextJS Batatabit</title>
         <meta
           name='description'
-          content='Project test for NextJS and Vercel stack'
+          content='Batatabit created using NextJS and deployed with Vercel.'
         />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <div>Hello world!</div>
