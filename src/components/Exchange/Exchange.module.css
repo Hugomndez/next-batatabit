@@ -1,0 +1,156 @@
+.section {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.image {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.titleContainer {
+  width: 100%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: var(--h2);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--warm-black);
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.tables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .tables {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto;
+  }
+}
+.currencyTable,
+.comisionesTable {
+  min-width: 235px;
+  height: 360px;
+  font-family: var(--Secondary-FF);
+}
+.currencyTableTitle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: #ff9536;
+}
+.comisionesTableTitle {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--secundary-blue);
+}
+.currencyTableContainer,
+.comisionesTableContainer {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+.table {
+  width: 100%;
+  height: 100%;
+}
+.table td {
+  width: 50%;
+  font-style: normal;
+  background-color: var(--just-white);
+}
+
+.tableLeft {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: #b5b0ac;
+}
+
+.tableRight {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575;
+}
+
+.tableTopLeft {
+  border-radius: 15px 0 0 0;
+}
+
+.tableTopRight {
+  border-radius: 0 15px 0 0;
+}
+
+.tableBottomLeft {
+  border-radius: 0 0 0 15px;
+}
+
+.tableBottomRight {
+  border-radius: 0 0 15px 0;
+}
+
+.trendingDown,
+.trendingUp {
+  margin-inline-start: 10px;
+  vertical-align: middle;
+}
+
+.date {
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.date p {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
+
+.currencyDateBg {
+  background-color: var(--soft-orange);
+}
+
+.comisionesDateBg {
+  background-color: var(--soft-blue);
+}
