@@ -17,7 +17,7 @@
   align-self: center;
 }
 
-.title-container {
+.container {
   width: 90%;
   min-width: 288px;
   max-width: 900px;
@@ -65,6 +65,6 @@
   color: var(--warm-black);
 }
 
-.button-icon {
+.icon {
   margin-left: 10px;
 }

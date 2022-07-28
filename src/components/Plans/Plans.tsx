@@ -23,17 +23,13 @@ const Plans = () => {
             <p className={styles.cardSaving}>* Acceso limitado.</p>
             <button className={styles.cardCta}>
               Escoger este
-              <Image src={orangeRightArrow} alt='' />
-              {/* <img
-                className={styles.cardCtaIcon}
+              <Image
                 src={orangeRightArrow}
                 alt=''
-                width='20'
-                height='20'
-                fetchpriority='low'
-                decoding='async'
-                loading='lazy'
-              /> */}
+                width={20}
+                height={20}
+                className={styles.cardCtaIcon}
+              />
             </button>
           </div>
         </article>
@@ -49,17 +45,13 @@ const Plans = () => {
             </p>
             <button className={styles.cardCta}>
               Escoger este
-              <Image src={orangeRightArrow} alt='' />
-              {/* <img
-                className={styles.cardCtaIcon}
+              <Image
                 src={orangeRightArrow}
                 alt=''
-                width='20'
-                height='20'
-                fetchpriority='low'
-                decoding='async'
-                loading='lazy'
-              /> */}
+                width={20}
+                height={20}
+                className={styles.cardCtaIcon}
+              />
             </button>
           </div>
         </article>
@@ -72,17 +64,13 @@ const Plans = () => {
             <p className={styles.cardSaving}>* Acceso ilimitado.</p>
             <button className={styles.cardCta}>
               Escoger este
-              <Image src={orangeRightArrow} alt='' />
-              {/* <img
-                className={styles.cardCtaIcon}
+              <Image
                 src={orangeRightArrow}
                 alt=''
-                width='20'
-                height='20'
-                fetchpriority='low'
-                decoding='async'
-                loading='lazy'
-              /> */}
+                width={20}
+                height={20}
+                className={styles.cardCtaIcon}
+              />
             </button>
           </div>
         </article>

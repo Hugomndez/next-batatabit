@@ -11,7 +11,7 @@
   top: -10px;
   left: calc(50% - 20px);
 }
-.title-container {
+.titleContainer {
   width: 90%;
   min-width: 288px;
   height: auto;
@@ -46,12 +46,12 @@
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.card-icon {
+.cardIcon {
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.card-title {
+.cardTitle {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-style: normal;
@@ -59,7 +59,7 @@
   line-height: 1.8rem;
   color: var(--just-white);
 }
-.card-body {
+.cardBody {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 500;
@@ -68,7 +68,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .cards-container {
+  .cardsContainer {
     display: flex;
     flex-wrap: wrap;
     width: 900px;

@@ -4,7 +4,7 @@
   padding-bottom: 70px;
   text-align: center;
 }
-.title-container {
+.titleContainer {
   width: 90%;
   min-width: 288px;
   height: auto;
@@ -27,7 +27,7 @@
   line-height: 1.8rem;
   color: #757575;
 }
-.slider-container {
+.sliderContainer {
   display: flex;
   gap: 10px;
   height: 316px;
@@ -38,12 +38,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .slider-container {
+  .sliderContainer {
     margin: 0 auto;
     width: 750px;
   }
 }
-.card-container {
+.cardContainer {
   position: relative;
   scroll-snap-align: center;
   width: 70%;
@@ -71,7 +71,7 @@
   background-color: var(--bitcoin-orange);
 }
 
-.card-title {
+.cardTitle {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -79,7 +79,7 @@
   line-height: 1.8rem;
   color: black;
 }
-.card-price {
+.cardPrice {
   position: relative;
   padding: 5px 0;
   font-size: 5.2rem;
@@ -88,7 +88,7 @@
   line-height: 5.3rem;
   color: black;
 }
-.card-price span {
+.cardPrice span {
   position: absolute;
   top: 10px;
   left: calc(50% - 38px);
@@ -98,13 +98,13 @@
   line-height: 1.5rem;
   font-weight: 300;
 }
-.card-saving {
+.cardSaving {
   font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
   color: #757575;
 }
-.card-cta {
+.cardCta {
   width: 150px;
   height: 48px;
   margin-top: 20px;
@@ -119,6 +119,6 @@
   color: var(--warm-black);
 }
 
-.card-cta-icon {
+.cardCtaIcon {
   vertical-align: middle;
 }

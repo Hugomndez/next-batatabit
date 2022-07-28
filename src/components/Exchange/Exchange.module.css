@@ -11,7 +11,7 @@
   margin-bottom: 50px;
 }
 
-.title-container {
+.titleContainer {
   width: 100%;
   min-width: 288px;
   max-width: 900px;
@@ -52,13 +52,13 @@
     margin: 0 auto;
   }
 }
-.currency-table,
-.comisiones-table {
+.currencyTable,
+.comisionesTable {
   min-width: 235px;
   height: 360px;
   font-family: var(--Secondary-FF);
 }
-.currency-table--title {
+.currencyTableTitle {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-style: normal;
@@ -66,7 +66,7 @@
   line-height: 2.3rem;
   color: #ff9536;
 }
-.comisiones-table--title {
+.comisionesTableTitle {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-style: normal;
@@ -74,8 +74,8 @@
   line-height: 2.3rem;
   color: var(--secundary-blue);
 }
-.currency-table--container,
-.comisiones-table--container {
+.currencyTableContainer,
+.comisionesTableContainer {
   width: 90%;
   min-width: 230px;
   max-width: 300px;
@@ -92,38 +92,38 @@
   background-color: var(--just-white);
 }
 
-.table-left {
+.tableLeft {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
   color: #b5b0ac;
 }
 
-.table-right {
+.tableRight {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
 }
 
-.table-top-left {
+.tableTopLeft {
   border-radius: 15px 0 0 0;
 }
 
-.table-top-right {
+.tableTopRight {
   border-radius: 0 15px 0 0;
 }
 
-.table-bottom-left {
+.tableBottomLeft {
   border-radius: 0 0 0 15px;
 }
 
-.table-bottom-right {
+.tableBottomRight {
   border-radius: 0 0 15px 0;
 }
 
-.trending-down,
-.trending-up {
+.trendingDown,
+.trendingUp {
   margin-inline-start: 10px;
   vertical-align: middle;
 }
@@ -147,10 +147,10 @@
   color: var(--warm-black);
 }
 
-.currency-date-bg {
+.currencyDateBg {
   background-color: var(--soft-orange);
 }
 
-.comisiones-date-bg {
+.comisionesDateBg {
   background-color: var(--soft-blue);
 }
