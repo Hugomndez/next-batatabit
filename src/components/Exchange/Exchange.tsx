@@ -25,64 +25,70 @@ const Exchange = () => {
           <p className={styles.currencyTableTitle}>Monedas</p>
           <div className={styles.currencyTableContainer}>
             <table className={styles.table}>
-              <tr>
-                <td className={`${styles.tableTopLeft} ${styles.tableLeft}`}>
-                  Bitcoin
-                </td>
-                <td className={`${styles.tableTopRight} ${styles.tableRight}`}>
-                  $ 1.96
-                  <Image
-                    src={trendingDown}
-                    alt=''
-                    width={15}
-                    height={15}
-                    className={styles.trendingDown}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td className={styles.tableLeft}>Ethereum</td>
-                <td className={styles.tableRight}>
-                  $ 0.07
-                  <Image
-                    src={trendingUp}
-                    alt=''
-                    width={15}
-                    height={15}
-                    className={styles.trendingUp}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td className={styles.tableLeft}>Ripple</td>
-                <td className={styles.tableRight}>
-                  $ 2.17
-                  <Image
-                    src={trendingDown}
-                    alt=''
-                    width={15}
-                    height={15}
-                    className={styles.trendingDown}
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td className={`${styles.tableBottomLeft} ${styles.tableLeft}`}>
-                  Stella
-                </td>
-                <td
-                  className={`${styles.tableBottomRight} ${styles.tableRight}`}
-                >
-                  $ 4.96
-                  <Image
-                    src={trendingDown}
-                    alt=''
-                    width={15}
-                    height={15}
-                    className={styles.trendingDown}
-                  />
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className={`${styles.tableTopLeft} ${styles.tableLeft}`}>
+                    Bitcoin
+                  </td>
+                  <td
+                    className={`${styles.tableTopRight} ${styles.tableRight}`}
+                  >
+                    $ 1.96
+                    <Image
+                      src={trendingDown}
+                      alt=''
+                      width={15}
+                      height={15}
+                      className={styles.trendingDown}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td className={styles.tableLeft}>Ethereum</td>
+                  <td className={styles.tableRight}>
+                    $ 0.07
+                    <Image
+                      src={trendingUp}
+                      alt=''
+                      width={15}
+                      height={15}
+                      className={styles.trendingUp}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td className={styles.tableLeft}>Ripple</td>
+                  <td className={styles.tableRight}>
+                    $ 2.17
+                    <Image
+                      src={trendingDown}
+                      alt=''
+                      width={15}
+                      height={15}
+                      className={styles.trendingDown}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    className={`${styles.tableBottomLeft} ${styles.tableLeft}`}
+                  >
+                    Stella
+                  </td>
+                  <td
+                    className={`${styles.tableBottomRight} ${styles.tableRight}`}
+                  >
+                    $ 4.96
+                    <Image
+                      src={trendingDown}
+                      alt=''
+                      width={15}
+                      height={15}
+                      className={styles.trendingDown}
+                    />
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className={`${styles.date} ${styles.currencyDateBg}`}>
@@ -95,32 +101,38 @@ const Exchange = () => {
           <p className={styles.comisionesTableTitle}>Comisiones</p>
           <div className={styles.comisionesTableContainer}>
             <table className={styles.table}>
-              <tr>
-                <td className={`${styles.tableTopLeft} ${styles.tableLeft}`}>
-                  Bitrade
-                </td>
-                <td className={`${styles.tableTopRight} ${styles.tableRight}`}>
-                  $ 12.96
-                </td>
-              </tr>
-              <tr>
-                <td className={styles.tableLeft}>Bitpreco</td>
-                <td className={styles.tableRight}>$ 13.07</td>
-              </tr>
-              <tr>
-                <td className={styles.tableLeft}>Novadax</td>
-                <td className={styles.tableRight}>$ 13.15</td>
-              </tr>
-              <tr>
-                <td className={`${styles.tableBottomLeft} ${styles.tableLeft}`}>
-                  Coinext
-                </td>
-                <td
-                  className={`${styles.tableBottomRight} ${styles.tableRight}`}
-                >
-                  $ 14.96
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td className={`${styles.tableTopLeft} ${styles.tableLeft}`}>
+                    Bitrade
+                  </td>
+                  <td
+                    className={`${styles.tableTopRight} ${styles.tableRight}`}
+                  >
+                    $ 12.96
+                  </td>
+                </tr>
+                <tr>
+                  <td className={styles.tableLeft}>Bitpreco</td>
+                  <td className={styles.tableRight}>$ 13.07</td>
+                </tr>
+                <tr>
+                  <td className={styles.tableLeft}>Novadax</td>
+                  <td className={styles.tableRight}>$ 13.15</td>
+                </tr>
+                <tr>
+                  <td
+                    className={`${styles.tableBottomLeft} ${styles.tableLeft}`}
+                  >
+                    Coinext
+                  </td>
+                  <td
+                    className={`${styles.tableBottomRight} ${styles.tableRight}`}
+                  >
+                    $ 14.96
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
           <div className={`${styles.date} ${styles.comisionesDateBg}`}>
