@@ -1,7 +1,20 @@
 {
   "name": "next-batatabit",
-  "version": "0.1.0",
+  "description": "Project test for NextJS and Vercel CI / CD workflow",
+  "author": {
+    "name": "Hugo Méndez",
+    "url": "https://hugomendez.dev"
+  },
+  "version": "0.1.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hugomndez/next-batatabit"
+  },
+  "bugs": {
+    "url": "https://github.com/Hugomndez/next-batatabit/issues"
+  },
+  "homepage": "https://next-batatabit.vercel.app/",
   "browserslist": [
     ">0.25%",
     "not ie 11",
@@ -14,7 +27,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "critters": "^0.0.16",
+    "critters": "0.0.16",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
