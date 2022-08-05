@@ -1,8 +1,8 @@
+import Image from 'next/future/image';
+import Link from 'next/link';
 import downArrow from '../../assets/icons/down-arrow.svg';
 import logo from '../../assets/images/logo.svg';
 import styles from './Header.module.css';
-import Image from 'next/future/image';
-import Link from 'next/link';
 
 const Header = () => {
   return (
