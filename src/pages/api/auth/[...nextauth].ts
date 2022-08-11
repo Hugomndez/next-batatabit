@@ -22,7 +22,7 @@ const options: NextAuthOptions = {
       async authorize(credentials) {
         // Conectar API
         const response = await fetch(
-          `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth/batatabit`,
+          `${process.env.NEXT_PUBLIC_PROTOCOL}${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth/batatabit`,
           {
             method: 'POST',
             body: JSON.stringify(credentials),
