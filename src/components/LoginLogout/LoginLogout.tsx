@@ -1,4 +1,5 @@
 import { signIn, signOut, useSession } from 'next-auth/react';
+import styles from './LoginLogout.module.css';
 
 const LoginLogout = () => {
   const { data: session, status } = useSession(); // Obteniendo status
@@ -7,13 +8,19 @@ const LoginLogout = () => {
   if (loading) return null; // if loading don't show anything
 
   if (!session) {
-    return <button onClick={() => signIn()}>Sign In</button>;
+    return (
+      <button className={styles.button} onClick={() => signIn()}>
+        Sign In
+      </button>
+    );
   }
 
   return (
     <>
-      <span>{session.user?.name}</span>
-      <button onClick={() => signOut()}>Log Out</button>
+      <span className={styles.username}>{session.user?.name}</span>
+      <button className={styles.button} onClick={() => signOut()}>
+        Log Out
+      </button>
     </>
   );
 };
