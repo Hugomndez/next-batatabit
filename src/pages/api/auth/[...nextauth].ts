@@ -1,6 +1,7 @@
 import type { NextAuthOptions } from 'next-auth';
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
+import GitHubProvider from 'next-auth/providers/github';
 
 const options: NextAuthOptions = {
   theme: {
@@ -11,7 +12,8 @@ const options: NextAuthOptions = {
   jwt: {},
   providers: [
     CredentialsProvider({
-      name: 'Batatabit',
+      name: 'Credentials',
+
       credentials: {
         password: {
           type: 'password',
@@ -40,6 +42,10 @@ const options: NextAuthOptions = {
 
         return null;
       },
+    }),
+    GitHubProvider({
+      clientId: process.env.AUTH_GITHUB_ID,
+      clientSecret: process.env.AUTH_GITHUB_SECRET,
     }),
   ],
 };

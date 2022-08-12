@@ -17,7 +17,7 @@ const credentialsAuth: NextApiHandler<User> = (request, response) => {
   // validar credentials
   if (request.body.password === process.env.AUTH_BATATABIT_SECRET) {
     const batatabitUser: User = {
-      name: 'Hugo',
+      name: 'Batatabit User',
       email: 'test@batatabit.com',
     };
 

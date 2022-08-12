@@ -21,6 +21,7 @@
   color: var(--warm-black);
   transition: background-color 1s;
   transition: color 1s;
+  cursor: pointer;
 }
 
 .button:hover {
