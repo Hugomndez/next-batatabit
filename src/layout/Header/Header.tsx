@@ -2,6 +2,7 @@ import Image from 'next/future/image';
 import Link from 'next/link';
 import downArrow from '../../assets/icons/down-arrow.svg';
 import logo from '../../assets/images/logo.svg';
+import { LoginLogout } from '../../components';
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -20,6 +21,7 @@ const Header = () => {
           Batatabit te ayuda a navegar entre los diferentes precios y
           tendencias.
         </p>
+        <LoginLogout />
         <a href='#plans' className={styles.button}>
           <p>Conoce Nuestros Planes</p>
           <Image src={downArrow} alt='' className={styles.icon} priority />
