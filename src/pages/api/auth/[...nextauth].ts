@@ -6,9 +6,7 @@ import GitHubProvider from 'next-auth/providers/github';
 const BASE_URL =
   process.env.NODE_ENV !== 'production'
     ? process.env.NEXTAUTH_URL
-    : process.env.VERCEL_URL;
-
-console.log(BASE_URL);
+    : `https://${process.env.VERCEL_URL}`;
 
 const options: NextAuthOptions = {
   theme: {
