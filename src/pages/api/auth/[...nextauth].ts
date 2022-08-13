@@ -7,46 +7,43 @@ const options: NextAuthOptions = {
   theme: {
     colorScheme: 'light',
   },
-  debug: true,
+  debug: process.env.NODE_ENV !== 'production',
   session: {},
   jwt: {},
   providers: [
-    CredentialsProvider({
-      name: 'Credentials',
+    process.env.VERCEL_ENV === 'preview'
+      ? CredentialsProvider({
+          name: 'Credentials',
+          credentials: {
+            password: {
+              type: 'password',
+              label: 'Password:',
+              placeholder: '**************',
+            },
+          },
+          async authorize(credentials) {
+            const response = await fetch(
+              `${process.env.NEXTAUTH_URL}/api/auth/batatabit`,
+              {
+                method: 'POST',
+                body: JSON.stringify(credentials),
+                headers: { 'Content-type': 'application/json' },
+              }
+            );
 
-      credentials: {
-        password: {
-          type: 'password',
-          label: 'Password:',
-          placeholder: '**************',
-        },
-      },
-      async authorize(credentials) {
-        // Conectar API
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_PROTOCOL}${process.env.NEXT_PUBLIC_VERCEL_URL}/api/auth/batatabit`,
-          {
-            method: 'POST',
-            body: JSON.stringify(credentials),
-            headers: { 'Content-type': 'application/json' },
-          }
-        );
+            const user = await response.json();
 
-        // Json rta API
-        const user = await response.json();
+            if (response.ok && user) {
+              return user;
+            }
 
-        // return user ?? null
-        if (response.ok && user) {
-          return user;
-        }
-
-        return null;
-      },
-    }),
-    GitHubProvider({
-      clientId: process.env.AUTH_GITHUB_ID,
-      clientSecret: process.env.AUTH_GITHUB_SECRET,
-    }),
+            return null;
+          },
+        })
+      : GitHubProvider({
+          clientId: process.env.AUTH_GITHUB_ID as string,
+          clientSecret: process.env.AUTH_GITHUB_SECRET as string,
+        }),
   ],
 };
 
