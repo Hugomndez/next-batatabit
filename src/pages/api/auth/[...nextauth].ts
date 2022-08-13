@@ -3,6 +3,13 @@ import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import GitHubProvider from 'next-auth/providers/github';
 
+const BASE_URL =
+  process.env.NODE_ENV !== 'production'
+    ? process.env.NEXTAUTH_URL
+    : process.env.VERCEL_URL;
+
+console.log(BASE_URL);
+
 const options: NextAuthOptions = {
   theme: {
     colorScheme: 'light',
@@ -11,7 +18,7 @@ const options: NextAuthOptions = {
   session: {},
   jwt: {},
   providers: [
-    process.env.VERCEL_ENV === 'preview'
+    process.env.NODE_ENV !== 'production'
       ? CredentialsProvider({
           name: 'Credentials',
           credentials: {
@@ -22,14 +29,11 @@ const options: NextAuthOptions = {
             },
           },
           async authorize(credentials) {
-            const response = await fetch(
-              `${process.env.NEXTAUTH_URL}/api/auth/batatabit`,
-              {
-                method: 'POST',
-                body: JSON.stringify(credentials),
-                headers: { 'Content-type': 'application/json' },
-              }
-            );
+            const response = await fetch(`${BASE_URL}/api/auth/batatabit`, {
+              method: 'POST',
+              body: JSON.stringify(credentials),
+              headers: { 'Content-type': 'application/json' },
+            });
 
             const user = await response.json();
 
