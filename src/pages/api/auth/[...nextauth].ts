@@ -18,7 +18,7 @@ const options: NextAuthOptions = {
   session: {},
   jwt: {},
   providers: [
-    process.env.NODE_ENV !== 'production'
+    process.env.VERCEL_ENV !== 'production'
       ? CredentialsProvider({
           name: 'Credentials',
           credentials: {
