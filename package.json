@@ -27,14 +27,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cookie": "0.5.0",
     "critters": "0.0.16",
     "next": "12.2.4",
-    "next-auth": "^4.10.3",
+    "next-auth": "4.10.3",
+    "next-i18next": "11.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.6.5",
+    "@types/cookie": "0.5.1",
+    "@types/node": "18.7.1",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "eslint": "8.21.0",

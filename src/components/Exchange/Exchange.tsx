@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
 import trendingDown from '../../assets/icons/trending-down.svg';
 import trendingUp from '../../assets/icons/trending-up.svg';
@@ -6,23 +7,19 @@ import { useDate } from '../../hooks';
 import styles from './Exchange.module.css';
 
 const Exchange = () => {
+  const { t } = useTranslation('exchange');
   const date = useDate();
 
   return (
     <section className={styles.section}>
       <Image src={bitcoin} alt='' className={styles.image} priority />
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>
-          Visibilizamos todas las tasas de cambio.
-        </h2>
-        <p className={styles.subtitle}>
-          Traemos información en tiempo real de las casas de cambio y las
-          monedas más importantes del mundo.
-        </p>
+        <h2 className={styles.title}>{t('title')}</h2>
+        <p className={styles.subtitle}>{t('subTitle')}</p>
       </div>
       <section className={styles.tables}>
         <div className={styles.currencyTable}>
-          <p className={styles.currencyTableTitle}>Monedas</p>
+          <p className={styles.currencyTableTitle}>{t('coins')}</p>
           <div className={styles.currencyTableContainer}>
             <table className={styles.table}>
               <tbody>
@@ -93,12 +90,12 @@ const Exchange = () => {
           </div>
           <div className={`${styles.date} ${styles.currencyDateBg}`}>
             <p>
-              <b>Actualizado:</b> <span>{date}</span>
+              <b>{t('updated')}:</b> <span>{date}</span>
             </p>
           </div>
         </div>
         <div className={styles.comisionesTable}>
-          <p className={styles.comisionesTableTitle}>Comisiones</p>
+          <p className={styles.comisionesTableTitle}>{t('commissions')}</p>
           <div className={styles.comisionesTableContainer}>
             <table className={styles.table}>
               <tbody>
@@ -137,7 +134,7 @@ const Exchange = () => {
           </div>
           <div className={`${styles.date} ${styles.comisionesDateBg}`}>
             <p>
-              <b>Actualizado:</b> <span>{date}</span>
+              <b>{t('updated')}:</b> <span>{date}</span>
             </p>
           </div>
         </div>

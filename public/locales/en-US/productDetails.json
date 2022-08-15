@@ -1,0 +1,22 @@
+{
+  "title": "We create a product like no other.",
+  "subTitle": "Reliable and designed for your daily use.",
+  "details": [
+    {
+      "name": "Real time",
+      "description": "Our API takes minute-by-minute information on the rates that most determine behavior."
+    },
+    {
+      "name": "There are no hidden fees",
+      "description": "Neither in the purchase nor at the time of exit, Batabit always shows you the real cost of what you are purchasing."
+    },
+    {
+      "name": "Compare currencies",
+      "description": "Neither in the purchase nor at the time of exit, Batabit always shows you the real cost of what you are purchasing."
+    },
+    {
+      "name": "Reliable information",
+      "description": "Our sources are 100% verified and we continue to audit their content as they update."
+    }
+  ]
+}
