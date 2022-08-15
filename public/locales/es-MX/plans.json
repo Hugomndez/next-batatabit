@@ -1,0 +1,25 @@
+{
+  "title": "Escoge el plan que mejor se ajuste a ti.",
+  "subTitle": "Cualquier plan te da acceso completo a nuestra plataforma.",
+  "recommended": "Recomendado",
+  "plans": [
+    {
+      "payment": "Pago mensual",
+      "price": 19,
+      "description": "Acceso limitado",
+      "callToAction": "Escoger este"
+    },
+    {
+      "payment": "Pago anual",
+      "price": 99,
+      "description": "Ahorras $129 comparado al plan mensual.",
+      "callToAction": "Escoger este"
+    },
+    {
+      "payment": "Pago anual",
+      "price": 199,
+      "description": "Acceso ilimitado",
+      "callToAction": "Escoger este"
+    }
+  ]
+}

@@ -1,28 +1,27 @@
+import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
 import orangeRightArrow from '../../assets/icons/orange-right-arrow.svg';
 import styles from './Plans.module.css';
 
 const Plans = () => {
+  const { t } = useTranslation('plans');
+
   return (
     <section id='plans' className={styles.section}>
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>
-          Escoge el plan que mejor se ajuste a ti.
-        </h2>
-        <p className={styles.subtitle}>
-          Cualquier plan te da acceso completo a nuestra plataforma.
-        </p>
+        <h2 className={styles.title}>{t('title')}</h2>
+        <p className={styles.subtitle}>{t('subTitle')}</p>
       </div>
       <section className={styles.sliderContainer}>
         <article className={styles.cardContainer}>
           <div>
-            <h3 className={styles.cardTitle}>Pago mensual</h3>
+            <h3 className={styles.cardTitle}>{t('plans.0.payment')}</h3>
             <p className={styles.cardPrice}>
-              <span>$</span> 19
+              <span>$</span> {t('plans.0.price')}
             </p>
-            <p className={styles.cardSaving}>* Acceso limitado.</p>
+            <p className={styles.cardSaving}>* {t('plans.0.description')}</p>
             <button className={styles.cardCta}>
-              Escoger este
+              {t('plans.0.callToAction')}
               <Image
                 src={orangeRightArrow}
                 alt=''
@@ -34,17 +33,15 @@ const Plans = () => {
           </div>
         </article>
         <article className={styles.cardContainer}>
-          <p className={styles.recommended}>Recomendado</p>
+          <p className={styles.recommended}>{t('recommended')}</p>
           <div>
-            <h3 className={styles.cardTitle}>Pago anual</h3>
+            <h3 className={styles.cardTitle}>{t('plans.1.payment')}</h3>
             <p className={styles.cardPrice}>
-              <span>$</span> 99
+              <span>$</span> {t('plans.1.price')}
             </p>
-            <p className={styles.cardSaving}>
-              * Ahorras $129 comparado al plan mensual.
-            </p>
+            <p className={styles.cardSaving}>* {t('plans.1.description')}</p>
             <button className={styles.cardCta}>
-              Escoger este
+              {t('plans.1.callToAction')}
               <Image
                 src={orangeRightArrow}
                 alt=''
@@ -57,13 +54,13 @@ const Plans = () => {
         </article>
         <article className={styles.cardContainer}>
           <div>
-            <h3 className={styles.cardTitle}>Pago anual</h3>
+            <h3 className={styles.cardTitle}>{t('plans.2.payment')}</h3>
             <p className={styles.cardPrice}>
-              <span>$</span> 199
+              <span>$</span> {t('plans.2.price')}
             </p>
-            <p className={styles.cardSaving}>* Acceso ilimitado.</p>
+            <p className={styles.cardSaving}>* {t('plans.2.description')}</p>
             <button className={styles.cardCta}>
-              Escoger este
+              {t('plans.2.callToAction')}
               <Image
                 src={orangeRightArrow}
                 alt=''

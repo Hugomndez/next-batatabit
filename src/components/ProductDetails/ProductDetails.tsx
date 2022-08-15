@@ -1,22 +1,23 @@
+import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
 import batata from '../../assets/icons/batata.svg';
 import checkCircle from '../../assets/icons/check-circle.svg';
 import clock from '../../assets/icons/clock.svg';
 import dollarSign from '../../assets/icons/dollar-sign.svg';
 import eye from '../../assets/icons/eye.svg';
-import styles from './ProductDetail.module.css';
+import styles from './ProductDetails.module.css';
 
-const ProductDetail = () => {
+const ProductDetails = () => {
+  const { t } = useTranslation('productDetails');
+
   return (
     <section className={styles.section}>
       <span className={styles.logo}>
         <Image src={batata} alt='' />
       </span>
       <div className={styles.titleContainer}>
-        <h2 className={styles.title}>Creamos un producto sin comparación.</h2>
-        <p className={styles.subtitle}>
-          Confiable y diseñado para su uso diario.
-        </p>
+        <h2 className={styles.title}>{t('title')}</h2>
+        <p className={styles.subtitle}>{t('subTitle')}</p>
       </div>
       <section className={styles.cardsContainer}>
         <article className={styles.card}>
@@ -27,11 +28,8 @@ const ProductDetail = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>Tiempo real</p>
-          <p className={styles.cardBody}>
-            Nuestra API toma información minuto a minuto sobre las tasas que más
-            determinan el comportamiento.
-          </p>
+          <p className={styles.cardTitle}>{t('details.0.name')}</p>
+          <p className={styles.cardBody}>{t('details.0.description')}</p>
         </article>
         <article className={styles.card}>
           <Image
@@ -41,11 +39,8 @@ const ProductDetail = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>No hay tasas escondidas</p>
-          <p className={styles.cardBody}>
-            Ni en la compra o al momento de exit, Batabit siempre te muestra el
-            costo real de lo que estás adquiriendo.
-          </p>
+          <p className={styles.cardTitle}>{t('details.1.name')}</p>
+          <p className={styles.cardBody}>{t('details.1.description')}</p>
         </article>
         <article className={styles.card}>
           <Image
@@ -55,11 +50,8 @@ const ProductDetail = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>Compara monedas</p>
-          <p className={styles.cardBody}>
-            Ni en la compra o al momento de exit, Batabit siempre te muestra el
-            costo real de lo que estás adquiriendo.
-          </p>
+          <p className={styles.cardTitle}>{t('details.2.name')}</p>
+          <p className={styles.cardBody}>{t('details.2.description')}</p>
         </article>
         <article className={styles.card}>
           <Image
@@ -69,15 +61,12 @@ const ProductDetail = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>Información confiable</p>
-          <p className={styles.cardBody}>
-            Nuestras fuentes están 100% verificadas y continuamos auditando su
-            contenido mientras actualizan.
-          </p>
+          <p className={styles.cardTitle}>{t('details.3.name')}</p>
+          <p className={styles.cardBody}>{t('details.3.description')}</p>
         </article>
       </section>
     </section>
   );
 };
 
-export default ProductDetail;
+export default ProductDetails;
