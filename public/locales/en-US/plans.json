@@ -1,0 +1,25 @@
+{
+  "title": "Choose the plan that best suits you.",
+  "subTitle": "Any plan gives you full access to our platform.",
+  "recommended": "Recommended",
+  "plans": [
+    {
+      "payment": "Monthly payment",
+      "price": 19,
+      "description": "Limited access",
+      "callToAction": "Choose this"
+    },
+    {
+      "payment": "Annual payment",
+      "price": 99,
+      "description": "You save $129 compared to the monthly plan.",
+      "callToAction": "Choose this"
+    },
+    {
+      "payment": "Annual payment",
+      "price": 199,
+      "description": "Unlimited access",
+      "callToAction": "Choose this"
+    }
+  ]
+}
