@@ -4,6 +4,10 @@ const generateRobotsTxt = require('./src/utils/generate-robots-txt');
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  i18n: {
+    locales: ['en-US', 'es-MX'],
+    defaultLocale: 'en-US',
+  },
   experimental: {
     images: {
       allowFutureImage: true,
