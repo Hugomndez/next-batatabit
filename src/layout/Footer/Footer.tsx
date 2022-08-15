@@ -1,5 +1,6 @@
 import Image from 'next/future/image';
 import logoFooter from '../../assets/images/logo-footer.svg';
+import { LocaleOptions } from '../../components';
 import styles from './Footer.module.css';
 
 const Footer = () => {
@@ -24,6 +25,7 @@ const Footer = () => {
           </li>
         </ul>
       </section>
+      <LocaleOptions />
       <section className={styles.section}>
         <Image src={logoFooter} alt='Logo Batatabit 2021' />
       </section>
