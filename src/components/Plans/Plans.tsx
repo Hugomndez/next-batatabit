@@ -7,7 +7,7 @@ const Plans = () => {
   const { t } = useTranslation('plans');
 
   return (
-    <section id='plans' className={styles.section}>
+    <section id="plans" className={styles.section}>
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>{t('title')}</h2>
         <p className={styles.subtitle}>{t('subTitle')}</p>
@@ -24,7 +24,7 @@ const Plans = () => {
               {t('plans.0.callToAction')}
               <Image
                 src={orangeRightArrow}
-                alt=''
+                alt=""
                 width={20}
                 height={20}
                 className={styles.cardCtaIcon}
@@ -44,7 +44,7 @@ const Plans = () => {
               {t('plans.1.callToAction')}
               <Image
                 src={orangeRightArrow}
-                alt=''
+                alt=""
                 width={20}
                 height={20}
                 className={styles.cardCtaIcon}
@@ -63,7 +63,7 @@ const Plans = () => {
               {t('plans.2.callToAction')}
               <Image
                 src={orangeRightArrow}
-                alt=''
+                alt=""
                 width={20}
                 height={20}
                 className={styles.cardCtaIcon}

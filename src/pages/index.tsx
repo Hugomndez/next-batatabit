@@ -26,8 +26,8 @@ const Home: NextPage = () => {
       <Head>
         <title>NextJS Batatabit</title>
         <meta
-          name='description'
-          content='Batatabit created using NextJS and deployed with Vercel.'
+          name="description"
+          content="Batatabit created using NextJS and deployed with Vercel."
         />
       </Head>
 
