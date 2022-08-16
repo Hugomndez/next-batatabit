@@ -43,6 +43,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/cookie": "0.5.1",
     "@types/node": "18.7.1",
     "@types/react": "18.0.17",
