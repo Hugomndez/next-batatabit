@@ -25,6 +25,7 @@
   },
   "packageManager": "yarn@1.22.17",
   "scripts": {
+    "dev:debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -48,6 +49,7 @@
     "@types/node": "18.7.1",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
+    "cross-env": "^7.0.3",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",
     "husky": "^8.0.1",
