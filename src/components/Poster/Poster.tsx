@@ -7,7 +7,7 @@ const Poster = () => {
   const { t } = useTranslation('poster');
   return (
     <section className={styles.container}>
-      <Image src={bitcoinBaby2x} alt='' className={styles.image} />
+      <Image src={bitcoinBaby2x} alt="" className={styles.image} />
       <h2 className={styles.title}>{t('title')}</h2>
     </section>
   );

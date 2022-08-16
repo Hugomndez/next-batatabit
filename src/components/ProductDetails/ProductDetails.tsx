@@ -13,7 +13,7 @@ const ProductDetails = () => {
   return (
     <section className={styles.section}>
       <span className={styles.logo}>
-        <Image src={batata} alt='' />
+        <Image src={batata} alt="" />
       </span>
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>{t('title')}</h2>
@@ -23,7 +23,7 @@ const ProductDetails = () => {
         <article className={styles.card}>
           <Image
             src={clock}
-            alt=''
+            alt=""
             width={20}
             height={20}
             className={styles.cardIcon}
@@ -34,7 +34,7 @@ const ProductDetails = () => {
         <article className={styles.card}>
           <Image
             src={eye}
-            alt=''
+            alt=""
             width={20}
             height={20}
             className={styles.cardIcon}
@@ -45,7 +45,7 @@ const ProductDetails = () => {
         <article className={styles.card}>
           <Image
             src={dollarSign}
-            alt=''
+            alt=""
             width={20}
             height={20}
             className={styles.cardIcon}
@@ -56,7 +56,7 @@ const ProductDetails = () => {
         <article className={styles.card}>
           <Image
             src={checkCircle}
-            alt=''
+            alt=""
             width={20}
             height={20}
             className={styles.cardIcon}

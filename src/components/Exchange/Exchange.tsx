@@ -12,7 +12,7 @@ const Exchange = () => {
 
   return (
     <section className={styles.section}>
-      <Image src={bitcoin} alt='' className={styles.image} priority />
+      <Image src={bitcoin} alt="" className={styles.image} priority />
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>{t('title')}</h2>
         <p className={styles.subtitle}>{t('subTitle')}</p>
@@ -33,7 +33,7 @@ const Exchange = () => {
                     $ 1.96
                     <Image
                       src={trendingDown}
-                      alt=''
+                      alt=""
                       width={15}
                       height={15}
                       className={styles.trendingDown}
@@ -46,7 +46,7 @@ const Exchange = () => {
                     $ 0.07
                     <Image
                       src={trendingUp}
-                      alt=''
+                      alt=""
                       width={15}
                       height={15}
                       className={styles.trendingUp}
@@ -59,7 +59,7 @@ const Exchange = () => {
                     $ 2.17
                     <Image
                       src={trendingDown}
-                      alt=''
+                      alt=""
                       width={15}
                       height={15}
                       className={styles.trendingDown}
@@ -78,7 +78,7 @@ const Exchange = () => {
                     $ 4.96
                     <Image
                       src={trendingDown}
-                      alt=''
+                      alt=""
                       width={15}
                       height={15}
                       className={styles.trendingDown}

@@ -9,17 +9,17 @@ const Footer = () => {
       <section className={styles.section}>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <a className={styles.a} href='#'>
+            <a className={styles.a} href="#">
               LinkedIn
             </a>
           </li>
           <li className={styles.li}>
-            <a className={styles.a} href='#'>
+            <a className={styles.a} href="#">
               Crunchbase
             </a>
           </li>
           <li className={styles.li}>
-            <a className={styles.a} href='#'>
+            <a className={styles.a} href="#">
               Hackernews
             </a>
           </li>
@@ -27,7 +27,7 @@ const Footer = () => {
       </section>
       <LocaleOptions />
       <section className={styles.section}>
-        <Image src={logoFooter} alt='Logo Batatabit 2021' />
+        <Image src={logoFooter} alt="Logo Batatabit 2021" />
       </section>
     </footer>
   );
