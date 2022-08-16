@@ -20,6 +20,11 @@
     "not ie 11",
     "not op_mini all"
   ],
+  "engines": {
+    "node": ">=16.16.0",
+    "yarn": ">=1.22.19",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
