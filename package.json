@@ -21,8 +21,9 @@
     "not op_mini all"
   ],
   "engines": {
-    "node": "16.15.0"
+    "node": "16"
   },
+  "packageManager": "yarn@1.22.17",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
