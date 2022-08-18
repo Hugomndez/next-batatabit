@@ -2,9 +2,9 @@ import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
 import trendingDown from '../../assets/icons/trending-down.svg';
 import trendingUp from '../../assets/icons/trending-up.svg';
-import bitcoin from '../../assets/images/bitcoin.svg';
 import { useDate } from '../../hooks';
 import styles from './Exchange.module.css';
+import { bitcoin } from './media';
 
 const Exchange = () => {
   const { t } = useTranslation('exchange');
@@ -12,7 +12,13 @@ const Exchange = () => {
 
   return (
     <section className={styles.section}>
-      <Image src={bitcoin} alt="" className={styles.image} priority />
+      <Image
+        src={`data:image/png;base64,${bitcoin}`}
+        alt=""
+        width={195}
+        height={195}
+        className={styles.image}
+      />
       <div className={styles.titleContainer}>
         <h2 className={styles.title}>{t('title')}</h2>
         <p className={styles.subtitle}>{t('subTitle')}</p>
