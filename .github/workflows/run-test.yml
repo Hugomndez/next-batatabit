@@ -1,4 +1,4 @@
-name: ci
+name: CI/CD
 
 on:
   push:
@@ -29,5 +29,5 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16.x
-      - run: yarn add -g pa11y-ci
+      - run: npm install -g pa11y-ci
       - run: pa11y-ci --sitemap ${{ needs.wait_for_vercel.outputs.preview_url }}/sitemap.xml
