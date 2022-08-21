@@ -28,7 +28,7 @@ const ProductDetails = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>{t('details.0.name')}</p>
+          <h3 className={styles.cardTitle}>{t('details.0.name')}</h3>
           <p className={styles.cardBody}>{t('details.0.description')}</p>
         </article>
         <article className={styles.card}>
@@ -39,7 +39,7 @@ const ProductDetails = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>{t('details.1.name')}</p>
+          <h3 className={styles.cardTitle}>{t('details.1.name')}</h3>
           <p className={styles.cardBody}>{t('details.1.description')}</p>
         </article>
         <article className={styles.card}>
@@ -50,7 +50,7 @@ const ProductDetails = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>{t('details.2.name')}</p>
+          <h3 className={styles.cardTitle}>{t('details.2.name')}</h3>
           <p className={styles.cardBody}>{t('details.2.description')}</p>
         </article>
         <article className={styles.card}>
@@ -61,7 +61,7 @@ const ProductDetails = () => {
             height={20}
             className={styles.cardIcon}
           />
-          <p className={styles.cardTitle}>{t('details.3.name')}</p>
+          <h3 className={styles.cardTitle}>{t('details.3.name')}</h3>
           <p className={styles.cardBody}>{t('details.3.description')}</p>
         </article>
       </section>

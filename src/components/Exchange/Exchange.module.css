@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575;
+  color: var(--subtitle);
 }
 
 .tables {
@@ -96,14 +96,14 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #b5b0ac;
+  color: var(--table-name);
 }
 
 .tableRight {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
-  color: #757575;
+  color: var(--subtitle);
 }
 
 .tableTopLeft {
