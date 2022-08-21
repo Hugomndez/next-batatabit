@@ -11,6 +11,8 @@ const nextConfig = {
       allowFutureImage: true,
     },
     optimizeCss: true,
+    legacyBrowsers: false,
+    browsersListForSwc: true,
   },
   webpack(config, { isServer }) {
     if (isServer) {

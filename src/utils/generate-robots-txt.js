@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const crawlableRobotsTxt = `User-agent: *\nAllow: /`;
+const crawlableRobotsTxt = `User-agent: *\nAllow: /\n\nSitemap: https://next-batatabit.vercel.app/sitemap.xml`;
 
 const uncrawlableRobotsTxt = `User-agent: *\nDisallow: /`;
 
