@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: var(--card-subtitle);
 }
 .card {
   width: 90%;
@@ -64,7 +64,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.8rem;
-  color: #808080;
+  color: var(--card-text);
 }
 
 @media screen and (min-width: 1000px) {

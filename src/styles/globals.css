@@ -1,12 +1,16 @@
 :root {
   /* Colors */
-  --bitcoin-orange: #f7931a;
+  --bitcoin-orange: #ff9933;
   --soft-orange: #ffe9d5;
-  --secundary-blue: #1a9af7;
+  --secundary-blue: #1a63f7; /*#1a9af7*/
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
   --black: #282623;
   --grey: #bababa;
+  --subtitle: #717171; /*#757575*/
+  --table-name: #787572; /*#b5b0ac*/
+  --card-subtitle: #878787; /*#808080*/
+  --card-text: #8e8e8e; /*#808080*/
   --off-white: #faf8f7;
   --just-white: #ffffff;
 

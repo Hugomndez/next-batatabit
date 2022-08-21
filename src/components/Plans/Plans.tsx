@@ -16,9 +16,9 @@ const Plans = () => {
         <article className={styles.cardContainer}>
           <div>
             <h3 className={styles.cardTitle}>{t('plans.0.payment')}</h3>
-            <p className={styles.cardPrice}>
+            <h4 className={styles.cardPrice}>
               <span>$</span> {t('plans.0.price')}
-            </p>
+            </h4>
             <p className={styles.cardSaving}>* {t('plans.0.description')}</p>
             <button className={styles.cardCta}>
               {t('plans.0.callToAction')}
@@ -36,9 +36,9 @@ const Plans = () => {
           <p className={styles.recommended}>{t('recommended')}</p>
           <div>
             <h3 className={styles.cardTitle}>{t('plans.1.payment')}</h3>
-            <p className={styles.cardPrice}>
+            <h4 className={styles.cardPrice}>
               <span>$</span> {t('plans.1.price')}
-            </p>
+            </h4>
             <p className={styles.cardSaving}>* {t('plans.1.description')}</p>
             <button className={styles.cardCta}>
               {t('plans.1.callToAction')}
@@ -55,9 +55,9 @@ const Plans = () => {
         <article className={styles.cardContainer}>
           <div>
             <h3 className={styles.cardTitle}>{t('plans.2.payment')}</h3>
-            <p className={styles.cardPrice}>
+            <h4 className={styles.cardPrice}>
               <span>$</span> {t('plans.2.price')}
-            </p>
+            </h4>
             <p className={styles.cardSaving}>* {t('plans.2.description')}</p>
             <button className={styles.cardCta}>
               {t('plans.2.callToAction')}

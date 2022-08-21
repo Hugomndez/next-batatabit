@@ -25,7 +25,7 @@ const Exchange = () => {
       </div>
       <section className={styles.tables}>
         <div className={styles.currencyTable}>
-          <p className={styles.currencyTableTitle}>{t('coins')}</p>
+          <h3 className={styles.currencyTableTitle}>{t('coins')}</h3>
           <div className={styles.currencyTableContainer}>
             <table className={styles.table}>
               <tbody>
@@ -101,7 +101,7 @@ const Exchange = () => {
           </div>
         </div>
         <div className={styles.comisionesTable}>
-          <p className={styles.comisionesTableTitle}>{t('commissions')}</p>
+          <h3 className={styles.comisionesTableTitle}>{t('commissions')}</h3>
           <div className={styles.comisionesTableContainer}>
             <table className={styles.table}>
               <tbody>

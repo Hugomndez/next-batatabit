@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575;
+  color: var(--subtitle);
 }
 
 .tables {
@@ -64,7 +64,7 @@
   font-style: normal;
   font-weight: bold;
   line-height: 2.3rem;
-  color: #ff9536;
+  color: var(--subtitle);
 }
 .comisionesTableTitle {
   margin-bottom: 15px;
@@ -72,7 +72,7 @@
   font-style: normal;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--secundary-blue);
+  color: var(--subtitle);
 }
 .currencyTableContainer,
 .comisionesTableContainer {
@@ -96,14 +96,14 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
-  color: #b5b0ac;
+  color: var(--table-name);
 }
 
 .tableRight {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
-  color: #757575;
+  color: var(--subtitle);
 }
 
 .tableTopLeft {
@@ -144,7 +144,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.5rem;
-  color: var(--warm-black);
+  color: #6a6a6a;
 }
 
 .currencyDateBg {
@@ -152,5 +152,5 @@
 }
 
 .comisionesDateBg {
-  background-color: var(--soft-blue);
+  background-color: var(--soft-orange);
 }
