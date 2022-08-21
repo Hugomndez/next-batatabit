@@ -4,6 +4,7 @@ on:
   push:
   pull_request:
     branches:
+      - main
       - develop
       - 'feature/**'
 
@@ -19,7 +20,7 @@ jobs:
         id: waitForVercelPreviewDeployment
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          max_timeout: 120
+          max_timeout: 200
   pa11y:
     name: Accessibility tests
     needs: wait_for_vercel
