@@ -63,11 +63,12 @@
   padding: 6px;
   top: -15px;
   left: calc(50% - 60px);
+  font-family: var(--Secondary-FF);
   font-size: 1.2rem;
   border-radius: 8px;
   font-style: normal;
   font-weight: bold;
-  color: var(--just-white);
+  color: var(--warm-black);
   background-color: var(--bitcoin-orange);
 }
 
@@ -121,4 +122,5 @@
 
 .cardCtaIcon {
   vertical-align: middle;
+  margin-left: 5px;
 }

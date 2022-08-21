@@ -13,7 +13,7 @@
   font-style: normal;
   line-height: 1.8rem;
   margin-bottom: 4px;
-  color: var(--just-white);
+  color: var(--warm-black);
 }
 
 .section a {
@@ -23,15 +23,15 @@
   line-height: 1.8rem;
   padding: 4px;
   text-decoration: none;
-  color: var(--just-white);
+  color: var(--warm-black);
 }
 
 .section a:hover,
 .section a:active,
 .section a:focus {
-  border: 1px solid var(--just-white);
+  border: 1px solid var(--warm-black);
 }
 
 .active {
-  border: 1px solid var(--just-white);
+  border: 1px solid var(--warm-black);
 }

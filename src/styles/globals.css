@@ -1,8 +1,8 @@
 :root {
   /* Colors */
-  --bitcoin-orange: #f7931a;
+  --bitcoin-orange: #ff9933;
   --soft-orange: #ffe9d5;
-  --secundary-blue: #1a9af7;
+  --secundary-blue: #1a63f7; /*#1a9af7*/
   --soft-blue: #e7f5ff;
   --warm-black: #201e1c;
   --black: #282623;

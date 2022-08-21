@@ -64,7 +64,10 @@
   font-style: normal;
   font-weight: bold;
   line-height: 2.3rem;
-  color: #ff9536;
+  color: var(--subtitle);
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--soft-orange);
 }
 .comisionesTableTitle {
   margin-bottom: 15px;
@@ -72,7 +75,10 @@
   font-style: normal;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--secundary-blue);
+  color: var(--subtitle);
+  padding: 8px;
+  border-radius: 8px;
+  background-color: var(--soft-blue);
 }
 .currencyTableContainer,
 .comisionesTableContainer {
@@ -144,7 +150,7 @@
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.5rem;
-  color: var(--warm-black);
+  color: #6a6a6a;
 }
 
 .currencyDateBg {
