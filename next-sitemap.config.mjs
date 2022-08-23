@@ -1,9 +1,10 @@
 /** @type {import('next-sitemap').IConfig} */
 
-const BASE_URL =
-  process.env.NODE_ENV !== 'production'
-    ? process.env.NEXTAUTH_URL
-    : `https://${process.env.VERCEL_URL}`;
+const BASE_URL = {
+  production: 'https://next-batatabit.vercel.app',
+  preview: `https://${process.env.VERCEL_URL}`,
+  development: process.env.NEXTAUTH_URL,
+}[process.env.VERCEL_ENV];
 
 const config = {
   siteUrl: BASE_URL,
