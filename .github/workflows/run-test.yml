@@ -2,7 +2,6 @@ name: CI/CD
 
 on:
   push:
-  pull_request:
     branches:
       - main
       - develop
@@ -42,7 +41,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: ${{ needs.wait_for_vercel.outputs.preview_url }}
-          budgetPath: '.github/lighthouse/budget.json' # test performance budgets
-          uploadArtifacts: true # save results as an action artifacts
-          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+          budgetPath: '.github/lighthouse/budget.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
           runs: 3
