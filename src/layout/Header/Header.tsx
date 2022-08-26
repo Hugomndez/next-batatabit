@@ -1,6 +1,6 @@
+import { LoginLogout } from 'components';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import { LoginLogout } from '../../components';
 import styles from './Header.module.css';
 
 const Header = () => {

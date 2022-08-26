@@ -1,8 +1,8 @@
+import trendingDown from 'assets/icons/trending-down.svg';
+import trendingUp from 'assets/icons/trending-up.svg';
+import { useDate } from 'hooks';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
-import trendingDown from '../../assets/icons/trending-down.svg';
-import trendingUp from '../../assets/icons/trending-up.svg';
-import { useDate } from '../../hooks';
 import styles from './Exchange.module.css';
 import { bitcoin } from './media';
 
