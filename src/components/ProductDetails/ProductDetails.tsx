@@ -1,10 +1,10 @@
+import batata from 'assets/icons/batata.svg';
+import checkCircle from 'assets/icons/check-circle.svg';
+import clock from 'assets/icons/clock.svg';
+import dollarSign from 'assets/icons/dollar-sign.svg';
+import eye from 'assets/icons/eye.svg';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/future/image';
-import batata from '../../assets/icons/batata.svg';
-import checkCircle from '../../assets/icons/check-circle.svg';
-import clock from '../../assets/icons/clock.svg';
-import dollarSign from '../../assets/icons/dollar-sign.svg';
-import eye from '../../assets/icons/eye.svg';
 import styles from './ProductDetails.module.css';
 
 const ProductDetails = () => {
