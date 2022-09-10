@@ -61,6 +61,6 @@
     "typescript": "4.8.3"
   },
   "resolutions": {
-    "@next/env": "12.2.5"
+    "@next/env": "12.3.0"
   }
 }
