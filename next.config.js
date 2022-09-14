@@ -14,6 +14,7 @@ const nextConfig = {
     optimizeCss: true,
     legacyBrowsers: false,
     browsersListForSwc: true,
+    fallbackNodePolyfills: false,
   },
   webpack(config, { isServer }) {
     if (isServer) {
