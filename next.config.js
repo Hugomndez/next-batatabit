@@ -11,9 +11,6 @@ const nextConfig = {
   swcMinify: true,
   i18n,
   experimental: {
-    images: {
-      allowFutureImage: true,
-    },
     optimizeCss: true,
     legacyBrowsers: false,
     browsersListForSwc: true,
