@@ -2129,10 +2129,10 @@ next-i18next@12.1.0:
     i18next-fs-backend "^1.1.5"
     react-i18next "^11.18.4"
 
-next-sitemap@3.1.44:
-  version "3.1.44"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.44.tgz#836acca506d84ab2981bae398ca7a04b60b66e00"
-  integrity sha512-dg+qGfOpQemAb+LGShJmaJHyuf36rVqsIbkCBt0ldu10sAx+eMowVx6DzEtf2HoIIGWc7J+kfy//YsBCPdj47Q==
+next-sitemap@3.1.55:
+  version "3.1.55"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.55.tgz#9ba3ce6a22d8da641c241ddd644e1e3aef9a13c5"
+  integrity sha512-ZjkRfkqoSLbU+e8W9TWWe0zfOGNA47lpvm35kNcUCmj73gpLX2PIn51gwHT/B6bgGVAFYY0OXixJDrxIIwcEHw==
   dependencies:
     "@corex/deepmerge" "^4.0.29"
     minimist "^1.2.7"
