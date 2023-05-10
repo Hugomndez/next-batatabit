@@ -1,6 +1,6 @@
 import bitcoinBaby2x from 'assets/images/bitcoinbaby2x.jpg';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import styles from './Poster.module.css';
 
 const Poster = () => {

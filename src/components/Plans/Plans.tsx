@@ -1,6 +1,6 @@
 import orangeRightArrow from 'assets/icons/orange-right-arrow.svg';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import styles from './Plans.module.css';
 
 const Plans = () => {

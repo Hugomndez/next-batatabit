@@ -13,7 +13,6 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     legacyBrowsers: false,
-    browsersListForSwc: true,
     fallbackNodePolyfills: false,
   },
   webpack(config, { isServer }) {

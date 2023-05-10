@@ -1,6 +1,6 @@
 import logoFooter from 'assets/images/logo-footer.svg';
 import { LocaleOptions } from 'components';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import styles from './Footer.module.css';
 
 const Footer = () => {
