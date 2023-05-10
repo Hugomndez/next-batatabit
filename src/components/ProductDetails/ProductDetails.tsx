@@ -4,7 +4,7 @@ import clock from 'assets/icons/clock.svg';
 import dollarSign from 'assets/icons/dollar-sign.svg';
 import eye from 'assets/icons/eye.svg';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/future/image';
+import Image from 'next/image';
 import styles from './ProductDetails.module.css';
 
 const ProductDetails = () => {
