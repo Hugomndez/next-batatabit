@@ -23,8 +23,12 @@ const LocaleOptions = () => {
       {locales.map((loc, index) => {
         return (
           <div key={index}>
-            <Link href={asPath} locale={loc}>
-              <a className={loc === locale ? styles.active : ''}>{loc}</a>
+            <Link
+              href={asPath}
+              locale={loc}
+              className={loc === locale ? styles.active : ''}
+            >
+              {loc}
             </Link>
           </div>
         );
