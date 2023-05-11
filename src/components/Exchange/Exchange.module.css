@@ -56,7 +56,7 @@
 .comisionesTable {
   min-width: 235px;
   height: 360px;
-  font-family: var(--Secondary-FF);
+  font-family: var(--inter-font);
 }
 .currencyTableTitle {
   margin-bottom: 15px;

@@ -63,7 +63,7 @@
   padding: 6px;
   top: -15px;
   left: calc(50% - 60px);
-  font-family: var(--Secondary-FF);
+  font-family: var(--inter-font);
   font-size: 1.2rem;
   border-radius: 8px;
   font-style: normal;

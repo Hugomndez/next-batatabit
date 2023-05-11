@@ -14,10 +14,6 @@
   --off-white: #faf8f7;
   --just-white: #ffffff;
 
-  /* Font Family */
-  --Primary-FF: 'DM Sans', sans-serif;
-  --Secondary-FF: 'Inter', sans-serif;
-
   /* Font size */
   --h1: 2.6rem;
   --h2: 2.4rem;
@@ -39,7 +35,7 @@ html {
 }
 
 body {
-  font-family: var(--Primary-FF);
+  font-family: var(--dm-sans-font);
   font-size: var(--p);
   line-height: 24px;
   font-weight: 400;

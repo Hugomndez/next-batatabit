@@ -11,7 +11,6 @@ const nextConfig = {
   swcMinify: true,
   i18n,
   experimental: {
-    optimizeCss: true,
     legacyBrowsers: false,
     fallbackNodePolyfills: false,
   },
