@@ -39,7 +39,6 @@
     "@next/bundle-analyzer": "13.3.4",
     "@next/env": "13.4.1",
     "cookie": "0.5.0",
-    "critters": "0.0.16",
     "next": "13.4.1",
     "next-auth": "4.22.1",
     "next-i18next": "12.1.0",
